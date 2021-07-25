@@ -1,0 +1,273 @@
+:root {
+    --header-height: 3rem ;
+    --body-font: 'poppins' ;
+    --big-font-size: 2rem ;
+    --h1-font-size: 1.5rem ;
+    --h2-font-size: 1.25rem ;
+    --h3-font-size: 1.125rem ;
+    --normal-font-size: 0.940rem ;
+    --small-font-size: 0.820rem ;
+    --smaller-font-size: 0.750rem ;
+
+    --font-medium: 500 ;
+    --font-semi-bold: 600 ;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    margin: 0 0 var(--header-height) 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+img{
+    /* width: 100%; */
+    height: auto;
+}
+
+/* .header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 -1px 4px rgb(0 0 0 / 35%); 
+} */
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    height: calc(var(--header-height) + 1.5rem);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo {
+    color: black;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 3rem;
+}
+
+.nav__link {
+    color: black;
+}
+
+.nav__link:hover {
+    color: rgb(99, 214, 21);
+}
+
+.cart {
+    background-color: rgb(99, 214, 21);
+    padding: 0.2rem 0.4rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.cart:hover {
+    color: #000;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.home__container {
+    gap: 1rem
+}
+
+.home__content {
+    grid-template-columns: 3fr 3fr;
+    padding-top: 4rem;
+    align-items: center;
+}
+
+.home__data {
+    /* grid-column: 1/3; */
+    position: relative;
+    bottom: 40px;
+    margin-left: 0.8rem;
+}
+
+.home__subtitle {
+    color: rgb(51, 50, 50);
+}
+
+
+.home__img {
+    width: 540px;
+    justify-self: end;
+}
+
+.home__button {
+    background-color: rgb(99, 214, 21);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: var(--font-medium);
+}
+
+.products {
+    margin-top: 3rem;
+}
+
+.product__title {
+    margin-bottom: 0.5rem;
+}
+
+.product__items {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+.product__img {
+    justify-content: center;
+}
+
+.product__size {
+    background-color: rgba(209, 200, 200, 0.733);
+    padding: 0 0.35rem;
+    border-radius: 0.8rem;
+}
+
+.product__info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.8rem;
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+}
+
+.product__price {
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.add{
+    cursor: pointer;
+    background-color: rgb(99, 214, 21);
+    padding: 0.1rem 0.5rem;
+    border-style: none;
+    border-radius: 0.8rem;
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+
+.added {
+    background-color: rgb(8, 153, 73);
+}
+
+.single__product {
+    padding-top: 6rem;
+}
+
+.back {
+    border-style: none;
+    background-color: #fff;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+
+.back:hover {
+    color: rgb(99, 214, 21);
+}
+
+.cart__container {
+    margin: 2rem 8rem;
+}
+
+.cart__title {
+    margin-bottom: 3rem;
+}
+
+.cart__item {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.item__info {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.quantity {
+    padding: 0.7rem;
+}
+
+.quantity__btn {
+    background-color: rgb(99, 214, 21);
+    padding: 0.2rem 0.8rem;
+    border-style: none;
+    border-radius: 0.8rem;
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+
+.quantity__btn:hover {
+    background-color: rgb(21, 211, 62);
+}
+
+.delete__btn {
+    background-color: rgb(216, 73, 73);
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-style: none;
+    border-radius: 1rem;
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+
+.delete__btn:hover {
+    background-color:rgb(202, 39, 39) ;
+}
+
+.order__btn {
+    background-color: rgb(99, 214, 21);
+    padding: 0.3rem 0.6rem;
+    border-style: none;
+    border-radius: 1rem;
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
