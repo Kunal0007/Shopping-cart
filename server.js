@@ -15,9 +15,9 @@ app.use('/product/uploads', express.static('public'));
 app.use(express.json({ limit: '1mb' }));
 
 
-app.get("/", (req, res) => {
-  res.send("Server is running!!!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Server is running!!!");
+// });
 
 
 app.get("/api/products", (req, res) => {
