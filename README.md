@@ -3,6 +3,8 @@
 # https://react-shopping-web.herokuapp.com
 
 <p align="center"> <img src="public/Capture.PNG" alt="kunal0007" /> </p>
+<p align="center"> <img src="public/Capture2.PNG" alt="kunal0007" /> </p>
+<p align="center"> <img src="public/Capture3.PNG" alt="kunal0007" /> </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
