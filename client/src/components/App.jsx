@@ -31,6 +31,7 @@ const App = () => {
             <Route path="/" component={Home} exact></Route>
             <Route path="/product" component={ProductsPage} exact></Route>
             <Route path="/product/:_id" component={SingleProduct}></Route>
+            <Route path="/login" component={Cart}></Route>
             <Route path="/cart" component={Cart}></Route>
           </Switch>
         </CartContext.Provider>
