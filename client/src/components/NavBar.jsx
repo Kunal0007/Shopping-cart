@@ -1,10 +1,17 @@
-import { React, useContext } from "react";
+import { React, useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from './CartContext'
 
 const Navbar = () => {
 
   const { cart } = useContext(CartContext);
+  const [login, setLogin] = useState(false);
+
+  const auth = () => {
+    let check = login;
+    setLogin(!check);
+  }
+
 
   return (
     <>
@@ -20,6 +27,12 @@ const Navbar = () => {
               <li className="nav__item">
                 <Link to="/product" className="nav__link">Product</Link>
               </li>
+              {/* <li className="nav__item">
+                <Link to="/product" className="nav__link">My orders</Link>
+              </li>
+              <li className="nav__item">
+                <Link to="/login" className="nav__link" onClick={auth}>{login ? 'Login' : 'Logout'}</Link>
+              </li> */}
               <li className="nav__item">
                 <Link to="/cart">
                   <div className="nav__link cart">

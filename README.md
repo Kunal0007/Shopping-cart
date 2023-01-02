@@ -1,6 +1,5 @@
 # Getting Started with Create React App.
 
-# https://react-shopping-web.herokuapp.com
 
 <p align="center"> <img src="public/Capture.PNG" alt="kunal0007" /> </p>
 <p align="center"> <img src="public/Capture2.PNG" alt="kunal0007" /> </p>

@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="home container grid">
+        <div class="home__bg"></div>
         <div className="home__content grid">
           <div className="home__data">
             <h2 className="home__subtitle"><em>Are you hungry?</em></h2>
